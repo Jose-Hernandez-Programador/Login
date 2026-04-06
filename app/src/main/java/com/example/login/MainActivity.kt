@@ -23,3 +23,8 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Preview
+@Composable
+fun saludo() {
+    Text(text = "Hola")
+}
