@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuDefaults.outlinedTextFieldColors
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
@@ -144,6 +145,7 @@ fun TextoRegistro(){
  val registro = LocalContext.current
     Text(
         text = "Registrate",
+        fontWeight = FontWeight.Bold,
         color = Color.Blue,
         textDecoration = TextDecoration.Underline,
         modifier = Modifier.clickable {
@@ -160,17 +162,16 @@ fun Contenedor (){
         .background(color = Color(0xFFFF2F2F2))
         .border(width = 2.dp, color = Color.Black)
         .padding( horizontal = 30.dp, vertical = 50.dp),
-        verticalArrangement = Arrangement.spacedBy(30.dp),
+        verticalArrangement = Arrangement.spacedBy(20.dp),
         horizontalAlignment = Alignment.CenterHorizontally) {
         Usuario()
         Contraseña()
         Text(text = "¿No estas registrado?",
             fontSize = 15.sp, fontWeight = FontWeight.Bold)
-        /*TextoRegistro()*/
+        TextoRegistro()
         BotonLogin()
 
     }
-
-
-
 }
+
+
