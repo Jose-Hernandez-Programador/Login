@@ -40,6 +40,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.login.ui.theme.LoginTheme
+import kotlin.jvm.java
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -136,7 +137,7 @@ fun BotonLogin() {
     }
 }
 
-/*
+
 @Preview
 @Composable
 fun TextoRegistro(){
@@ -150,7 +151,7 @@ fun TextoRegistro(){
             registro.startActivity(intent)
         }
     )
-}*/
+}
 
 @Preview
 @Composable
