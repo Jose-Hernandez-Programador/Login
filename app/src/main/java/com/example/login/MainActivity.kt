@@ -145,6 +145,7 @@ fun TextoRegistro(){
  val registro = LocalContext.current
     Text(
         text = "Registrate",
+        fontWeight = FontWeight.Bold,
         color = Color.Blue,
         textDecoration = TextDecoration.Underline,
         modifier = Modifier.clickable {
@@ -161,13 +162,13 @@ fun Contenedor (){
         .background(color = Color(0xFFFF2F2F2))
         .border(width = 2.dp, color = Color.Black)
         .padding( horizontal = 30.dp, vertical = 50.dp),
-        verticalArrangement = Arrangement.spacedBy(30.dp),
+        verticalArrangement = Arrangement.spacedBy(20.dp),
         horizontalAlignment = Alignment.CenterHorizontally) {
         Usuario()
         Contraseña()
         Text(text = "¿No estas registrado?",
             fontSize = 15.sp, fontWeight = FontWeight.Bold)
-        /*TextoRegistro()*/
+        TextoRegistro()
         BotonLogin()
 
     }
