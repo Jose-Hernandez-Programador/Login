@@ -26,5 +26,5 @@ class Registro : ComponentActivity() {
 @Preview
 @Composable
 fun Saludo (){
-    Text(text = "Bienvenido al registro")
+    Text(text = "Bienvenido al registro de usuario")
 }
