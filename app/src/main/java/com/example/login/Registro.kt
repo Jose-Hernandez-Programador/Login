@@ -18,8 +18,13 @@ class Registro : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-
+            Saludo()
         }
     }
 }
 
+@Preview
+@Composable
+fun Saludo (){
+    Text(text = "Bienvenido al registro")
+}
